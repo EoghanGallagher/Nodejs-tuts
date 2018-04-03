@@ -91,15 +91,23 @@ nav #brand a
 .gold
 {
   color:gold;
+  font-size: 36px;
   font-style: italic;
+  font-weight: 400;
+}
+
+.chunky
+{
+  color:#fff;
+  font-family: "Anton";
+  font-weight:400;
 }
 
 nav #menu
 {
-  float: left;
-  left: 50%;
+  float: right;
+  right:2%;
   position: relative;
-
 }
 
 nav #menu li
@@ -208,7 +216,7 @@ nav #menu li a:hover {
 }
 
 
-@media(max-width: 960px)
+@media(max-width: 768px)
 {
   #toggle{
     visibility: visible;
@@ -245,12 +253,13 @@ nav #menu li a:hover {
 
 .section
 {
-    width: 80%;
-    margin: 4em auto;
-    line-height: 30px;
-    font-family: "Poppins";
-    font-size: 18px;
-    font-weight: normal;
+      width: 80%;
+      margin: 4em auto;
+      line-height: 30px;
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: normal;
+
 }
 
 .section h1

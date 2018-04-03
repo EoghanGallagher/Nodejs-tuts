@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 
 const fs = require('fs');
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
 var app = express();
 hbs.registerPartials(__dirname + '/views/partials');
@@ -32,10 +32,8 @@ hbs.registerHelper('screamIt', (text) => {
 
 app.get('/', (req, res) => {
   //response.send('<h1>Hello Express!</h1>');
-  res.render('home.hbs', {
-    pageTitle: 'Home Page',
-    welcomeMessage: 'Hello you fooools ',
-    currentYear: new Date().getFullYear(),
+  res.render('index.html', {
+
   });
 });
 

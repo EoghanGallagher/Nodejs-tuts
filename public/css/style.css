@@ -99,6 +99,7 @@ nav #menu
   float: left;
   left: 50%;
   position: relative;
+
 }
 
 nav #menu li
@@ -207,7 +208,7 @@ nav #menu li a:hover {
 }
 
 
-@media(max-width: 768px)
+@media(max-width: 960px)
 {
   #toggle{
     visibility: visible;
@@ -244,13 +245,12 @@ nav #menu li a:hover {
 
 .section
 {
-      width: 80%;
-      margin: 4em auto;
-      line-height: 30px;
-      font-family: "Poppins";
-      font-size: 18px;
-      font-weight: normal;
-
+    width: 80%;
+    margin: 4em auto;
+    line-height: 30px;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: normal;
 }
 
 .section h1

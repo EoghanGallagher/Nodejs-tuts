@@ -1,297 +1,325 @@
-*{
-  margin:0;
+:root {
+  --container-bg-color: #333;
+  --left-bg-color: rgba(21, 58, 219, 0.7);
+  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+
+}
+
+html, body
+{
   padding:0;
-  text-decoration: none;
-  list-style: none;
-}
-
-body
-{
-
-}
-
-p{
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color:rgb(65, 64, 64)
-}
-
-footer
-{
-
-  height: 5vh;
-  width:100vw;
-
-  min-height: 5vh;
-  min-width:100vw;
-
-  background-color: #000000
-}
-
-.wrapper
-{
+  margin:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100%;
-  height: 100vh;
-  background: url("../img/image6.jpg") no-repeat 50% 50%;
-  background-size: cover;
-  display: table;
-
-
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgb(223, 222, 222);
 }
 
-.content
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:  translate(-50%, -50%);
-
-}
-
-.content h1
-{
-   color:#fff;
-   font-family: "Poppins";
-   font-weight:200;
-   font-size: 48px;
-    text-shadow: 2px 2px #000;
-}
-
-nav
-{
-  width: 100%;
-  background: #000;
-  height: 70px;
-  position: static;
-  z-index: 1;
+h1{
+  font-size: 4rem;
+  color: #fff;
+  position:absolute;
+  left:50%;
+  top:20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 
-nav #brand
+
+.title
 {
-  float:left;
+  width:100%;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  font-size:36px;
+  color: #fff;
+}
+
+
+.button
+{
   display: block;
-  margin-left: 84px;
-  font-size: 30px;
-  line-height: 70px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width:15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
   font-weight: bold;
-}
-
-
-
-nav #brand a
-{
-  color: #fff;
-  transition: : all 0.3s ease-out;
-  font-family: "Poppins";
-  font-weight: 200;
-
-}
-
-.gold
-{
-  color:gold;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 400;
-}
-
-.chunky
-{
-  color:#fff;
-  font-family: "Anton";
-  font-weight:400;
-}
-
-nav #menu
-{
-  float: right;
-  right:2%;
-  position: relative;
-}
-
-nav #menu li
-{
-  display: inline-block;
-  padding: 0px  30px;
-  cursor: pointer;
-  line-height: 70px;
-  position: relative;
-  transition: all 0.3s ease-out;
-}
-
-nav #menu li a
-{
-  color: #fff;
-  font-family: "Poppins";
-  font-weight: 200;
   text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
 }
 
-nav #menu li a:hover {
-    color: gold;
+.split-left .button:hover{
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
 }
 
-#toggle
-{
+.split-right .button:hover{
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height:100%;
+  background: var(--container-bg-color);
+}
+
+.grid-container{
+  position: relative;
+  width: 60%;
+  height:20%;
+  transform: translate(35%, 50%);
+}
+
+
+.split{
   position: absolute;
-  right: 20px;
-  top: 14px;
-  z-index: 999;
-  width: 40px;
-  height:40px;
-  cursor: pointer;
-  float: right;
-  transition: all 0.6s ease-out;
-  visibility: visible;
-  opacity: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
 }
 
-#toggle .span
-{
-  height: 3px;
-  background: #fff;
-  transisiton: all 0.3s ease-out;
-  backface-visibility: hidden;
-  margin: 5px auto;
+.split.left{
+  left:0;
+  background: url("../img/game-dev2-min.jpg") center center no-repeat;
+  background-size: cover;
 }
 
-#toggle.on #one{
-    transform: rotate(45deg) translateX(2px) translateY(4px);
-}
-
-#toggle.on #two{
-    opacity: 0;
-}
-
-#toggle.on #three{
-  transform: rotate(-45deg) translateX(8px) translateY(-10px);
-}
-
-
-#resize{
-  z-index: 1;
-  top: 0px;
-  position: absolute;
-  background: #000;
+.split.left:before{
+  position:absolute;
+  content:"";
   width:100%;
   height:100%;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 1s ease-out;
-  display: table;
+  background: var(--left-bg-color);
+}
+
+.split.right{
+  right:0;
+  background: url('../img/web-dev-min.jpg') center center no-repeat;
+  background-image: cover;
+}
+
+.split.right:before{
+  position: absolute;
+  content:"";
+  width:100%;
+  height:100%;
+  background: var(--right-bg-color);
+}
+
+.split.left, .split.right, .split.left:before, .split.right:before{
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left{
+  width: var(--hover-width);
+}
+
+.hover-left .right{
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+.hover-right .right{
+  width: var(--hover-width);
+}
+
+.hover-right .left{
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  z-index: 2;
 }
 
 
-#resize #menu
-{
-  height: 50px;
-  display: table-cell;
-  vertical-align: center;
-}
-
-#resize #menu li
-{
-  display: block;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 50px;
-  min-height: 50px;
-  font-weight: 200;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-#resize #menu li a
-{
-  color: #fff;
-  text-transform: uppercase;
-}
-
-#resize.active
-{
-  visibility: visible;
-  opacity: 0.99;
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 25px;
+  margin-bottom:250px;
 
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 25px;
+  margin-bottom:250px;
 
-@media(max-width: 768px)
+}
+
+/* items */
+.grid div
 {
-  #toggle{
-    visibility: visible;
-    opacity: 1;
-    margin-top: 6px;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  min-height:200px;
+  height:225px;
+}
+
+/* specific item styles */
+.item {
+  background: #fff;
+  box-shadow: 2px 2px #000;
+  text-align: left;
+}
+
+
+
+#mandala
+{
+  background: url('../img/mandala-min-1.jpg') center center no-repeat;
+  background-size: cover;
+
+}
+
+#phonics
+{
+  background: url('../img/phonics.jpg')  no-repeat;
+  background-size: cover;
+}
+
+
+/* Gamedev Animated Background -- Move this to a function */
+.AnimatedBackGroundGameDev {
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #df142c,  #5f3b62, #145eab ,#153adb);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 60s ease infinite;
+	-moz-animation: Gradient 60s ease infinite;
+	animation: Gradient 60s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* ----- Ends ----- */
+
+
+/* WebDev Animated Background --move this to a function */
+
+.AnimatedBackGroundWebDev {
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #d0cbcb,  #757275, #020c16 ,#474b59);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 60s ease infinite;
+	-moz-animation: Gradient 60s ease infinite;
+	animation: Gradient 60s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* Ends */
+
+/* Media Queries */
+@media(max-width: 800px)
+{
+  h1{
+    font-size: 2rem;
   }
 
-  nav #brand
-  {
-      margin-left: 18px;
+  .button{
+    width: 12rem;
   }
-
-  #menu a{
-    font-family: "Poppins";
-    font-weight: 200;
-    font-size: 20px;
-  }
-
-  nav #menu{
-    display: none;
-  }
-
-  .content
-  {
-    width:80%;
-  }
-
-  .content h1
-  {
-    font-size: 40px;
-  }
-
 }
 
-.section
+@media(max-height: 700px)
 {
-      width: 80%;
-      margin: 4em auto;
-      line-height: 30px;
-      font-family: "Poppins";
-      font-size: 18px;
-      font-weight: normal;
-
-}
-
-.section h1
-{
-  font-size: 28px;
-  font-weight: 400;
-  font-family: "Poppins";
-  padding-bottom: 20px;
-}
-
-.copyright
-{
-  position: relative;
-  float: right;
-  top:15px;
-  right: 20px;
-  color:#ffffff;
-  font-size: 14px;
-  font-weight: 100;
-  font-family: "Poppins";
-
-
-}
-
-
-@media(min-width: 768px)
-{
-  #resize{
-    visibility: hidden !important;
+  .button{
+    top:70%;
   }
 }
-
-
-
-/*Contact form css*/

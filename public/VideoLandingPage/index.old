@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- materialize css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,200i,300,300i,400" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>DJ Bully Bolger</title>
+</head>
+
+
+<body class="grad1">
+
+  <div class="wrapper">
+    <nav class="sticky">
+      <div id="brand">
+          <a href="index.html"><img class="logo-image" src="./img/dj-bully-logo-small.png"></a>
+          <span class="gold logo-text">Dj Bully Bolger</span>
+               <!--<img class="logo-image" src="./img/dj-bully-logo-small.png"></img>-->
+      </div>
+
+    <div><a name="section-one"></div>
+
+      <ul id="menu">
+        <li><a href="#section-zero">Home</a></li>
+        <li><a href="#section-one">About</a></li>
+        <li><a href="#section-two">Videos</a></li>
+        <li><a href="#section-three">Contact</a></li>
+
+      </ul>
+
+      <div id="toggle">
+        <div class="span" id="one"></div>
+        <div class="span" id="two"></div>
+        <div class="span" id="three"></div>
+      </div>
+    </nav>
+
+    <div id="resize">
+      <ul id="menu">
+        <li><a href="#section-zero">Home</a></li>
+        <li><a href="#section-one">About</a></li>
+          <li><a href="#section-two">Videos</a></li>
+        <li><a href="#section-three">Contact</a></li>
+
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1 class="centered">Dj Bully Bolger</h1>
+      <div class="centered"><h2>Affordable and Professional Dj Services</h2></div>
+    </div>
+
+  </div>
+  <div class="space"></div>
+  <a name="section-one">
+  <div class="container">
+
+    <div class="row">
+      <div class="grid-example col s12"><span class="flow-text">I am always full-width (col s12)</span></div>
+      <div class="grid-example col s12 m6"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
+    </div>
+
+  </div>
+
+  <a name="section-two">
+  <div class="section">
+
+    <div class="section-content">
+      <h1>About Me</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit a dolore animi debitis mollitia reprehenderit, ex tenetur optio iste autem vero dolorum, earum libero dolor incidunt atque tempora. Nihil ab eveniet, aliquid labore alias numquam
+        laboriosam soluta assumenda vero consectetur doloremque quisquam voluptate cumque, atque dolorem aut ducimus placeat minus nulla, amet ipsa saepe. Ex recusandae vel maiores, repellendus autem sequi fugit impedit sint! Autem, iste eius aperiam
+        iusto dicta soluta excepturi est accusamus architecto veritatis similique dolorem maxime perspiciatis. Impedit repudiandae nesciunt nam molestiae omnis? Libero excepturi ipsam, magni illum, animi enim, et numquam possimus, aut explicabo vero.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit a dolore animi debitis mollitia reprehenderit, ex tenetur optio iste autem vero dolorum, earum libero dolor incidunt atque tempora. Nihil ab eveniet, aliquid labore alias numquam
+        laboriosam soluta assumenda vero consectetur doloremque quisquam voluptate cumque, atque dolorem aut ducimus placeat minus nulla, amet ipsa saepe. Ex recusandae vel maiores, repellendus autem sequi fugit impedit sint! Autem, iste eius aperiam
+        iusto dicta soluta excepturi est accusamus architecto veritatis similique dolorem maxime perspiciatis. Impedit repudiandae nesciunt nam molestiae omnis? Libero excepturi ipsam, magni illum, animi enim, et numquam possimus, aut explicabo vero.</p>
+    </div>
+  </div>
+
+  <a name="section-three">
+  <div class="section">
+
+    <h1>Biography</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit a dolore animi debitis mollitia reprehenderit, ex tenetur optio iste autem vero dolorum, earum libero dolor incidunt atque tempora. Nihil ab eveniet, aliquid labore alias numquam
+      laboriosam soluta assumenda vero consectetur doloremque quisquam voluptate cumque, atque dolorem aut ducimus placeat minus nulla, amet ipsa saepe. Ex recusandae vel maiores, repellendus autem sequi fugit impedit sint! Autem, iste eius aperiam iusto
+      dicta soluta excepturi est accusamus architecto veritatis similique dolorem maxime perspiciatis. Impedit repudiandae nesciunt nam molestiae omnis? Libero excepturi ipsam, magni illum, animi enim, et numquam possimus, aut explicabo vero.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit a dolore animi debitis mollitia reprehenderit, ex tenetur optio iste autem vero dolorum, earum libero dolor incidunt atque tempora. Nihil ab eveniet, aliquid labore alias numquam
+      laboriosam soluta assumenda vero consectetur doloremque quisquam voluptate cumque, atque dolorem aut ducimus placeat minus nulla, amet ipsa saepe. Ex recusandae vel maiores, repellendus autem sequi fugit impedit sint! Autem, iste eius aperiam iusto
+      dicta soluta excepturi est accusamus architecto veritatis similique dolorem maxime perspiciatis. Impedit repudiandae nesciunt nam molestiae omnis? Libero excepturi ipsam, magni illum, animi enim, et numquam possimus, aut explicabo vero.</p>
+
+  </div>
+
+  <footer>
+    <span class="copyright"> Copyright 2018 DJ BULLY. All Rights Reserved.</span>
+  </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+     
+
+    <script>
+      $('#toggle').click(function() {
+
+        console.log('Works Fine...');
+        $(this).toggleClass('on');
+        $('#resize').toggleClass('active');
+
+      });
+    </script>
+
+</body>
+
+</html>

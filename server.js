@@ -37,19 +37,19 @@ app.get('/', (req, res) => {
   });
 });
 
-// app.get('/about', (req, res) => {
-//   res.render('about.hbs', {
-//     pageTitle: 'About Page',
-//     currentYear: new Date().getFullYear(),
-//   });
-// });
-//
-// app.get('/bad', (req, res) => {
-//   res.send({
-//     error: 'Something went horribly wrong...',
-//   });
-// });
-//
-// app.listen(port, () => {
-//   console.log(`Server is running on port ${port}....`);
-// });
+app.get('/about', (req, res) => {
+  res.render('about.hbs', {
+    pageTitle: 'About Page',
+    currentYear: new Date().getFullYear(),
+  });
+});
+
+app.get('/bad', (req, res) => {
+  res.send({
+    error: 'Something went horribly wrong...',
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}....`);
+});
